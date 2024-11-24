@@ -1,4 +1,4 @@
-A simple nodejs backend system exposing APIs for Doctor Booking system. 
+A simple nodejs backend system exposing APIs for Doctor Booking. 
 
 ##### INSTRUCTIONS #####
 
