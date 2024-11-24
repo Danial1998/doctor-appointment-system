@@ -6,6 +6,7 @@ app.use(express.json());
 
 // in-memory storage
 const appointments = [];
+app.appointments = appointments;
 const doctors = [
     { name: "Dr. Smith", slots: ["9:00 AM - 10:00 AM", "10:00 AM - 11:00 AM", "2:00 PM - 3:00 PM"] },
     { name: "Dr. Johnson", slots: ["11:00 AM - 12:00 PM", "1:00 PM - 2:00 PM", "3:00 PM - 4:00 PM"] }
@@ -157,7 +158,4 @@ app.put('/api/appointments', (req, res) => {
     res.json(appointment);
 });
 
-// Start the server
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+module.exports = app;
